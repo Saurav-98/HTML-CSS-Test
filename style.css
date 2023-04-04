@@ -6,6 +6,12 @@ p,
 li {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #444;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 h1 {
   font-size: 36px;
@@ -41,4 +47,44 @@ li {
 footer p {
   font-size: 18px;
   text-align: center;
+}
+
+header {
+  background-color: #f2f2f2;
+}
+
+aside {
+  background-color: #f2f2f2;
+  border-block: 5px solid #1098ad;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+Li:last-child {
+  color: orangered;
+}
+li:nth-child(2) {
+  color: green;
+}
+
+a:link,
+a:visited {
+  color: magenta;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+  font-weight: bold;
+}
+a:active {
+  background-color: #bbb;
+  font-style: italic;
 }
