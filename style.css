@@ -56,16 +56,22 @@ body {
   background-color: blanchedalmond;
   border-top: 10px solid #1098ad;
 }
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
 
 .main-header {
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 .post-header {
   margin-bottom: 40px;
 }
 .post-image {
   margin-bottom: 40px;
+  width: 100%;
 }
 
 header {
@@ -76,6 +82,7 @@ aside {
   background-color: #f2f2f2;
   border-block: 5px solid #1098ad;
   padding: 50px 30px;
+  width: 400px;
 }
 footer p {
   font-size: 18px;
