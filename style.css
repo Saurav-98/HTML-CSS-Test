@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -22,11 +27,14 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -38,15 +46,26 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 li {
   font-size: 18px;
 }
+body {
+  background-color: blanchedalmond;
+  border-top: 10px solid #1098ad;
+}
 
-footer p {
-  font-size: 18px;
-  text-align: center;
+.main-header {
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+.post-image {
+  margin-bottom: 40px;
 }
 
 header {
@@ -56,18 +75,24 @@ header {
 aside {
   background-color: #f2f2f2;
   border-block: 5px solid #1098ad;
+  padding: 50px 30px;
+}
+footer p {
+  font-size: 18px;
+  text-align: center;
+  margin: 30px;
 }
 
-body {
-  background-color: blanchedalmond;
+li {
+  margin-bottom: 10px;
 }
-
 li:first-child {
   font-weight: bold;
 }
 
 Li:last-child {
   color: orangered;
+  margin-bottom: 0;
 }
 li:nth-child(2) {
   color: green;
