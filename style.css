@@ -55,6 +55,7 @@ li {
 body {
   background-color: blanchedalmond;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 .container {
   width: 80%;
@@ -66,8 +67,15 @@ body {
   margin-bottom: 60px;
   height: 80px;
 }
+.main-header h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
 .post-header {
   margin-bottom: 40px;
+}
+h3 + p::first-line {
+  color: red;
 }
 .post-image {
   margin-bottom: 40px;
@@ -119,4 +127,16 @@ a:hover {
 a:active {
   background-color: #bbb;
   font-style: italic;
+}
+/* .main-container {
+
+} */
+.like {
+  position: absolute;
+
+  font-size: 22px;
+  padding: 20px;
+
+  bottom: 50px;
+  right: 50px;
 }
