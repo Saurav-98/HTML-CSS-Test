@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,11 +41,14 @@ body {
   color: black;
   display: inline-block;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .more-info:hover,
 .more-info:active {
   text-decoration: none;
+}
+.details-title {
+  margin-bottom: 20px;
 }
 .details-list {
   list-style: square;
@@ -54,8 +58,8 @@ body {
 }
 .back {
   position: absolute;
-  top: 100px;
-  right: 0;
+  top: -25px;
+  right: -50px;
   padding: 10px 20px;
 }
 .add-cart,
@@ -69,10 +73,11 @@ body {
   font-size: 20px;
 }
 .add-cart {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 100%;
   padding: 20px;
   border-top: 5px solid #000;
+  clear: both;
 }
 .add-cart:hover,
 .back:hover {
@@ -80,9 +85,9 @@ body {
   background-color: #eee;
 }
 
-.box-container {
+/* .box-container {
   margin-bottom: 20px;
-}
+} */
 .box {
   width: 25px;
   height: 25px;
@@ -127,4 +132,40 @@ body {
   position: absolute;
   top: -20px;
   left: -40px;
+}
+
+.first,
+.second,
+.third {
+  width: 30%;
+  height: auto;
+}
+.first {
+  float: left;
+  height: 250px;
+}
+.second {
+  float: left;
+  margin-left: 40px;
+  height: 250px;
+}
+.third {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.converse-image {
+  width: 250px;
+}
+
+.price {
+  float: left;
+  margin-top: 20px;
+}
+.shipping {
+  float: right;
+  margin-top: 25px;
+}
+.clearfix {
+  clear: both;
 }

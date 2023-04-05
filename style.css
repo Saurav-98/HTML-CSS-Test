@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 h1,
@@ -9,8 +11,7 @@ h3,
 h4,
 p,
 li {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #444;
 }
 h1,
@@ -19,13 +20,15 @@ h3 {
   color: #1098ad;
 }
 h1 {
-  font-size: 36px;
-
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
 }
-
+.nav {
+  float: right;
+}
 h2 {
   font-size: 36px;
   margin-bottom: 30px;
@@ -41,6 +44,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -65,7 +69,8 @@ body {
 .main-header {
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+
+  /* height: 80px; */
 }
 .main-header h1::first-letter {
   font-style: normal;
@@ -83,14 +88,22 @@ h3 + p::first-line {
 }
 
 header {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 }
-
+.main-container {
+  width: 825px;
+  float: left;
+}
 aside {
   background-color: #f2f2f2;
   border-block: 5px solid #1098ad;
   padding: 50px 30px;
   width: 400px;
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
 }
 footer p {
   font-size: 18px;
@@ -115,8 +128,19 @@ li:nth-child(2) {
 
 a:link,
 a:visited {
-  color: magenta;
+  color: #1098ad;
+  font-weight: bold;
+  font-family: inherit;
   text-decoration: none;
+  display: inline-block;
+  /* margin-block: 20px; */
+  margin-right: 10px;
+  margin-top: 10px;
+  text-transform: lowercase;
+}
+a:link:last-child,
+a:visited:last-child {
+  margin-right: 0;
 }
 
 a:hover {
@@ -139,4 +163,27 @@ a:active {
 
   bottom: 50px;
   right: 50px;
+}
+
+.author-image {
+  float: left;
+}
+.author {
+  /* padding-left: 90px; */
+  /* padding-top: 10px; */
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* .clear {
+  clear: both;
+} */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+aside {
 }
